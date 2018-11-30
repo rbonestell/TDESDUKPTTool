@@ -5,6 +5,9 @@ Features:
 * Data encryption and decryption.
 * Key part/component XOR merging.
 
+[Download the installer here!](https://github.com/rbonestell/TDESDUKPTTool/releases/download/1.0/SetupTDESDUKPTTool.msi)
+
+#### About the project
 Visual Studio 2017 Solution
 
 Setup project requires [Microsoft Visual Studio 2017 Installer Projects Plugin](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
