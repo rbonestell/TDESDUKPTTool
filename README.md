@@ -5,6 +5,10 @@ Features:
 * Data encryption and decryption.
 * Key part/component XOR merging.
 
+Visual Studio 2017 Solution
+
+Setup project requires [Microsoft Visual Studio 2017 Installer Projects Plugin](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
+
 This project utilizes [Dukpt.NET by sgbj](https://github.com/sgbj/Dukpt.NET), modified to encrypt and decrypt utilizing a DEK mask for the session key.
 
 ## Contributing
