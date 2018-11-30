@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DukptNet", "DukptNet\DukptN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DukptNetTests", "DukptNetTests\DukptNetTests.csproj", "{5EB04997-E254-4191-8706-E336A26E62CC}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupTDESDUKPTTool", "SetupTDESDUKPTTool\SetupTDESDUKPTTool.vdproj", "{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{5EB04997-E254-4191-8706-E336A26E62CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB04997-E254-4191-8706-E336A26E62CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EB04997-E254-4191-8706-E336A26E62CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}.Debug|Any CPU.ActiveCfg = Debug
+		{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
