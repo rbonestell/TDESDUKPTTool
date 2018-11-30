@@ -1,4 +1,4 @@
-# TDESDUKPTTool
+# TDES DUKPT Tool
 TDES DUKPT encryption, decryption, and key part utility for Windows.
 
 Features:
