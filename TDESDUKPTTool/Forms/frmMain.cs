@@ -40,7 +40,7 @@ namespace TDESDUKPTTool
                 byte[] encryptedBytes = encryptedData.HexStringToByteArray();
 
                 // Decrypt data
-                byte[] decryptedBytes = Dukpt.DecryptDEK(txtBDK.Text, txtKSN.Text, encryptedBytes);
+                byte[] decryptedBytes = Dukpt.Decrypt(txtBDK.Text, txtKSN.Text, encryptedBytes, rbPINVariant.Checked);
 
                 // Convert bytes to ASCII string
                 string decryptedString = Encoding.ASCII.GetString(decryptedBytes);
@@ -61,7 +61,7 @@ namespace TDESDUKPTTool
                 byte[] decryptedBytes = Encoding.ASCII.GetBytes(txtDecryptedData.Text.Trim());
 
                 // Encrypt data
-                byte[] encryptedBytes = Dukpt.EncryptDEK(txtBDK.Text, txtKSN.Text, decryptedBytes);
+                byte[] encryptedBytes = Dukpt.Encrypt(txtBDK.Text, txtKSN.Text, decryptedBytes, rbPINVariant.Checked);
 
                 // Convert encrypted bytes to ASCII string of HEX
                 string encryptedString = encryptedBytes.ToHexString();

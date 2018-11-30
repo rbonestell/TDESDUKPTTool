@@ -47,7 +47,12 @@
             this.tsmiMore = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiBDKKeyPartTool = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDecrypt = new System.Windows.Forms.Button();
+            this.rbPINVariant = new System.Windows.Forms.RadioButton();
+            this.rbDataVariant = new System.Windows.Forms.RadioButton();
+            this.gbEncryptedDataVariant = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.msMainMenu.SuspendLayout();
+            this.gbEncryptedDataVariant.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtBDK
@@ -132,7 +137,7 @@
             // 
             // btnEncrypt
             // 
-            this.btnEncrypt.Location = new System.Drawing.Point(278, 228);
+            this.btnEncrypt.Location = new System.Drawing.Point(278, 283);
             this.btnEncrypt.Name = "btnEncrypt";
             this.btnEncrypt.Size = new System.Drawing.Size(255, 27);
             this.btnEncrypt.TabIndex = 8;
@@ -143,7 +148,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 259);
+            this.label1.Location = new System.Drawing.Point(9, 314);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 11;
@@ -152,7 +157,7 @@
             // txtDecryptedData
             // 
             this.txtDecryptedData.Font = new System.Drawing.Font("Courier New", 8F);
-            this.txtDecryptedData.Location = new System.Drawing.Point(12, 275);
+            this.txtDecryptedData.Location = new System.Drawing.Point(12, 330);
             this.txtDecryptedData.Multiline = true;
             this.txtDecryptedData.Name = "txtDecryptedData";
             this.txtDecryptedData.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -163,7 +168,7 @@
             // lnkWikipediaDUKPT
             // 
             this.lnkWikipediaDUKPT.AutoSize = true;
-            this.lnkWikipediaDUKPT.Location = new System.Drawing.Point(376, 385);
+            this.lnkWikipediaDUKPT.Location = new System.Drawing.Point(376, 440);
             this.lnkWikipediaDUKPT.Name = "lnkWikipediaDUKPT";
             this.lnkWikipediaDUKPT.Size = new System.Drawing.Size(157, 13);
             this.lnkWikipediaDUKPT.TabIndex = 12;
@@ -216,7 +221,7 @@
             // btnDecrypt
             // 
             this.btnDecrypt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDecrypt.Location = new System.Drawing.Point(12, 228);
+            this.btnDecrypt.Location = new System.Drawing.Point(12, 283);
             this.btnDecrypt.Name = "btnDecrypt";
             this.btnDecrypt.Size = new System.Drawing.Size(255, 27);
             this.btnDecrypt.TabIndex = 9;
@@ -225,11 +230,57 @@
             this.btnDecrypt.UseVisualStyleBackColor = true;
             this.btnDecrypt.Click += new System.EventHandler(this.btnDecrypt_Click);
             // 
+            // rbPINVariant
+            // 
+            this.rbPINVariant.AutoSize = true;
+            this.rbPINVariant.Location = new System.Drawing.Point(232, 18);
+            this.rbPINVariant.Name = "rbPINVariant";
+            this.rbPINVariant.Size = new System.Drawing.Size(79, 17);
+            this.rbPINVariant.TabIndex = 14;
+            this.rbPINVariant.Text = "PIN Variant";
+            this.rbPINVariant.UseVisualStyleBackColor = true;
+            // 
+            // rbDataVariant
+            // 
+            this.rbDataVariant.AutoSize = true;
+            this.rbDataVariant.Checked = true;
+            this.rbDataVariant.Location = new System.Drawing.Point(83, 20);
+            this.rbDataVariant.Name = "rbDataVariant";
+            this.rbDataVariant.Size = new System.Drawing.Size(84, 17);
+            this.rbDataVariant.TabIndex = 15;
+            this.rbDataVariant.TabStop = true;
+            this.rbDataVariant.Text = "Data Variant";
+            this.rbDataVariant.UseVisualStyleBackColor = true;
+            // 
+            // gbEncryptedDataVariant
+            // 
+            this.gbEncryptedDataVariant.Controls.Add(this.linkLabel1);
+            this.gbEncryptedDataVariant.Controls.Add(this.rbDataVariant);
+            this.gbEncryptedDataVariant.Controls.Add(this.rbPINVariant);
+            this.gbEncryptedDataVariant.Location = new System.Drawing.Point(15, 231);
+            this.gbEncryptedDataVariant.Name = "gbEncryptedDataVariant";
+            this.gbEncryptedDataVariant.Size = new System.Drawing.Size(518, 46);
+            this.gbEncryptedDataVariant.TabIndex = 17;
+            this.gbEncryptedDataVariant.TabStop = false;
+            this.gbEncryptedDataVariant.Text = "Key Derivation";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(397, 20);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(106, 13);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "DUKPT Key Variants";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 405);
+            this.ClientSize = new System.Drawing.Size(545, 465);
+            this.Controls.Add(this.gbEncryptedDataVariant);
             this.Controls.Add(this.lnkWikipediaDUKPT);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDecryptedData);
@@ -253,6 +304,8 @@
             this.Text = "TDES DUKPT Tool";
             this.msMainMenu.ResumeLayout(false);
             this.msMainMenu.PerformLayout();
+            this.gbEncryptedDataVariant.ResumeLayout(false);
+            this.gbEncryptedDataVariant.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,6 +331,10 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiExit;
         private System.Windows.Forms.ToolStripMenuItem tsmiMore;
         private System.Windows.Forms.ToolStripMenuItem tsmiBDKKeyPartTool;
+        private System.Windows.Forms.RadioButton rbPINVariant;
+        private System.Windows.Forms.RadioButton rbDataVariant;
+        private System.Windows.Forms.GroupBox gbEncryptedDataVariant;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
