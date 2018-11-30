@@ -106,6 +106,11 @@ namespace TDESDUKPTTool
             System.Diagnostics.Process.Start("https://en.wikipedia.org/wiki/Derived_unique_key_per_transaction");
         }
 
+        private void lnkKeyVariants_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://stackoverflow.com/questions/39775824/difference-between-pin-encryption-key-variant-and-data-encryption-key-variant");
+        }
+
         #endregion
     }
 }

@@ -50,7 +50,7 @@
             this.rbPINVariant = new System.Windows.Forms.RadioButton();
             this.rbDataVariant = new System.Windows.Forms.RadioButton();
             this.gbEncryptedDataVariant = new System.Windows.Forms.GroupBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkKeyVariants = new System.Windows.Forms.LinkLabel();
             this.msMainMenu.SuspendLayout();
             this.gbEncryptedDataVariant.SuspendLayout();
             this.SuspendLayout();
@@ -254,7 +254,7 @@
             // 
             // gbEncryptedDataVariant
             // 
-            this.gbEncryptedDataVariant.Controls.Add(this.linkLabel1);
+            this.gbEncryptedDataVariant.Controls.Add(this.lnkKeyVariants);
             this.gbEncryptedDataVariant.Controls.Add(this.rbDataVariant);
             this.gbEncryptedDataVariant.Controls.Add(this.rbPINVariant);
             this.gbEncryptedDataVariant.Location = new System.Drawing.Point(15, 231);
@@ -264,16 +264,17 @@
             this.gbEncryptedDataVariant.TabStop = false;
             this.gbEncryptedDataVariant.Text = "Key Derivation";
             // 
-            // linkLabel1
+            // lnkKeyVariants
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(397, 20);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(106, 13);
-            this.linkLabel1.TabIndex = 18;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "DUKPT Key Variants";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lnkKeyVariants.AutoSize = true;
+            this.lnkKeyVariants.Location = new System.Drawing.Point(397, 20);
+            this.lnkKeyVariants.Name = "lnkKeyVariants";
+            this.lnkKeyVariants.Size = new System.Drawing.Size(106, 13);
+            this.lnkKeyVariants.TabIndex = 18;
+            this.lnkKeyVariants.TabStop = true;
+            this.lnkKeyVariants.Text = "DUKPT Key Variants";
+            this.lnkKeyVariants.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lnkKeyVariants.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkKeyVariants_LinkClicked);
             // 
             // frmMain
             // 
@@ -334,7 +335,7 @@
         private System.Windows.Forms.RadioButton rbPINVariant;
         private System.Windows.Forms.RadioButton rbDataVariant;
         private System.Windows.Forms.GroupBox gbEncryptedDataVariant;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lnkKeyVariants;
     }
 }
 
