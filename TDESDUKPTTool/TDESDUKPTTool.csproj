@@ -55,24 +55,24 @@
     </Compile>
     <Compile Include="Utils\CryptoUtils.cs" />
     <Compile Include="Extensions\FormExtensions.cs" />
-    <Compile Include="frmKeyPartTool.cs">
+    <Compile Include="Forms\frmKeyPartTool.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmKeyPartTool.Designer.cs">
+    <Compile Include="Forms\frmKeyPartTool.Designer.cs">
       <DependentUpon>frmKeyPartTool.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmMain.cs">
+    <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMain.Designer.cs">
+    <Compile Include="Forms\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmKeyPartTool.resx">
+    <EmbeddedResource Include="Forms\frmKeyPartTool.resx">
       <DependentUpon>frmKeyPartTool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMain.resx">
+    <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
