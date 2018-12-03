@@ -19,14 +19,14 @@ namespace TDESDUKPTTool
 
         private void btnANSIKey_Click(object sender, EventArgs e)
         {
-            // ANSI x9.24 spec test key
+            // ANSI x9.24 Annex A test key
             txtBDK.Text = "0123456789ABCDEFFEDCBA9876543210";
         }
 
         private void btnANSIKSN_Click(object sender, EventArgs e)
         {
-            // KSN with ANSI x9.24 spec test KSI
-            txtKSN.Text = "FFFF987654000000001";
+            // KSN with ANSI x9.24 Annex A test KSI
+            txtKSN.Text = "FFFF9876543210E00001";
         }
 
         private void btnDecrypt_Click(object sender, EventArgs e)
