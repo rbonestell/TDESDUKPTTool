@@ -3,8 +3,13 @@ TDES DUKPT encryption, decryption, and key part utility for Windows.
 
 Features:
 * Data encryption and decryption.
+
+  <img src="https://i.imgur.com/2oOi5UXl.png" width="40%">
+
 * Key part/component XOR merging.
 
+  <img src="https://i.imgur.com/898rre0.png" width="40%">
+  
 [Download the installer here!](https://github.com/rbonestell/TDESDUKPTTool/releases/download/1.0/SetupTDESDUKPTTool.msi)
 
 ### Resources
