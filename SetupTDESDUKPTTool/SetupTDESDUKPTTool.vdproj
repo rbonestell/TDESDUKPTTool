@@ -21,7 +21,7 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_D33CEC7A3569E7D9D48D606993F3DB45"
+        "MsmKey" = "8:_CB3C6DE083746AF11FE933705A654147"
         "OwnerKey" = "8:_2E8E8EF86D4246388DB7C2262128C46D"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D33CEC7A3569E7D9D48D606993F3DB45"
+        "OwnerKey" = "8:_CB3C6DE083746AF11FE933705A654147"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +79,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -100,20 +124,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D33CEC7A3569E7D9D48D606993F3DB45"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CB3C6DE083746AF11FE933705A654147"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:DukptNet, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Dukpt, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D33CEC7A3569E7D9D48D606993F3DB45"
+                    "_CB3C6DE083746AF11FE933705A654147"
                     {
-                    "Name" = "8:DukptNet.dll"
+                    "Name" = "8:Dukpt.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:DukptNet.dll"
+            "SourcePath" = "8:Dukpt.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A25FD0B9FD6C402B8ADEC91C06FD92C7"
@@ -198,15 +222,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TDES DUKPT Tool"
-        "ProductCode" = "8:{50926226-ED02-45C6-9BE5-EA1323064B70}"
-        "PackageCode" = "8:{A8768C72-C0B6-4AF3-A05A-6BBA9ACF6925}"
+        "ProductCode" = "8:{E10644DC-2CCB-4DC6-97CB-3C5B8C1EAF20}"
+        "PackageCode" = "8:{1EE509F5-1E71-4462-8874-2B58014E1162}"
         "UpgradeCode" = "8:{1A99A8F1-6557-47DB-B769-58EA23153F76}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1"
         "Manufacturer" = "8:rbonestell"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/rbonestell/TDESDUKPTTool/issues"
@@ -734,7 +758,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_2E8E8EF86D4246388DB7C2262128C46D"
             {
-            "SourcePath" = "8:..\\TDESDUKPTTool\\obj\\Debug\\TDESDUKPTTool.exe"
+            "SourcePath" = "8:..\\TDESDUKPTTool\\obj\\Release\\TDESDUKPTTool.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_A25FD0B9FD6C402B8ADEC91C06FD92C7"
