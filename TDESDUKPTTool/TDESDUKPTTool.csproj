@@ -55,7 +55,7 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>key.ico</ApplicationIcon>
+    <ApplicationIcon>Images\key.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DUKPTCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -86,7 +86,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Utils\CryptoUtils.cs" />
     <Compile Include="Extensions\FormExtensions.cs" />
     <Compile Include="Forms\frmKeyPartTool.cs">
       <SubType>Form</SubType>
@@ -135,7 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\warning.png" />
-    <Content Include="key.ico" />
+    <Content Include="Images\key.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
