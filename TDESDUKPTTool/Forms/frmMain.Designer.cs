@@ -51,8 +51,11 @@
             this.rbDataVariant = new System.Windows.Forms.RadioButton();
             this.gbEncryptedDataVariant = new System.Windows.Forms.GroupBox();
             this.lnkKeyVariants = new System.Windows.Forms.LinkLabel();
+            this.llWarning = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.msMainMenu.SuspendLayout();
             this.gbEncryptedDataVariant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBDK
@@ -199,7 +202,7 @@
             // tsmiExit
             // 
             this.tsmiExit.Name = "tsmiExit";
-            this.tsmiExit.Size = new System.Drawing.Size(92, 22);
+            this.tsmiExit.Size = new System.Drawing.Size(93, 22);
             this.tsmiExit.Text = "E&xit";
             this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
@@ -214,7 +217,7 @@
             // tsmiBDKKeyPartTool
             // 
             this.tsmiBDKKeyPartTool.Name = "tsmiBDKKeyPartTool";
-            this.tsmiBDKKeyPartTool.Size = new System.Drawing.Size(143, 22);
+            this.tsmiBDKKeyPartTool.Size = new System.Drawing.Size(142, 22);
             this.tsmiBDKKeyPartTool.Text = "&Key Part Tool";
             this.tsmiBDKKeyPartTool.Click += new System.EventHandler(this.tsmiBDKKeyPartTool_Click);
             // 
@@ -276,11 +279,38 @@
             this.lnkKeyVariants.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.lnkKeyVariants.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkKeyVariants_LinkClicked);
             // 
+            // llWarning
+            // 
+            this.llWarning.AutoSize = true;
+            this.llWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llWarning.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.llWarning.Location = new System.Drawing.Point(27, 440);
+            this.llWarning.Name = "llWarning";
+            this.llWarning.Size = new System.Drawing.Size(58, 13);
+            this.llWarning.TabIndex = 18;
+            this.llWarning.TabStop = true;
+            this.llWarning.Text = "Warning!";
+            this.llWarning.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.llWarning.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llWarning_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TDESDUKPTTool.Properties.Resources.warning;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 434);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(15, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 465);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.llWarning);
             this.Controls.Add(this.gbEncryptedDataVariant);
             this.Controls.Add(this.lnkWikipediaDUKPT);
             this.Controls.Add(this.label1);
@@ -307,6 +337,7 @@
             this.msMainMenu.PerformLayout();
             this.gbEncryptedDataVariant.ResumeLayout(false);
             this.gbEncryptedDataVariant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +367,8 @@
         private System.Windows.Forms.RadioButton rbDataVariant;
         private System.Windows.Forms.GroupBox gbEncryptedDataVariant;
         private System.Windows.Forms.LinkLabel lnkKeyVariants;
+        private System.Windows.Forms.LinkLabel llWarning;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

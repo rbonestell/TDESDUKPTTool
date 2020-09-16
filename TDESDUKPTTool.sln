@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDESDUKPTTool", "TDESDUKPTTool\TDESDUKPTTool.csproj", "{48EE4D89-7AFE-438E-B411-3623AAB5E9A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DukptNet", "DukptNet\DukptNet.csproj", "{AABCC2F8-1E73-4279-8414-15BCB9ECA7D9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DukptNetTests", "DukptNetTests\DukptNetTests.csproj", "{5EB04997-E254-4191-8706-E336A26E62CC}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupTDESDUKPTTool", "SetupTDESDUKPTTool\SetupTDESDUKPTTool.vdproj", "{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}"
 EndProject
@@ -21,14 +17,6 @@ Global
 		{48EE4D89-7AFE-438E-B411-3623AAB5E9A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48EE4D89-7AFE-438E-B411-3623AAB5E9A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48EE4D89-7AFE-438E-B411-3623AAB5E9A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AABCC2F8-1E73-4279-8414-15BCB9ECA7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AABCC2F8-1E73-4279-8414-15BCB9ECA7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AABCC2F8-1E73-4279-8414-15BCB9ECA7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AABCC2F8-1E73-4279-8414-15BCB9ECA7D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5EB04997-E254-4191-8706-E336A26E62CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5EB04997-E254-4191-8706-E336A26E62CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5EB04997-E254-4191-8706-E336A26E62CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5EB04997-E254-4191-8706-E336A26E62CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}.Debug|Any CPU.ActiveCfg = Debug
 		{4E9ED0C3-E0C6-4CD9-ABE2-569AAFD9B5B4}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection

@@ -1,4 +1,4 @@
-﻿using DukptNet;
+﻿using DUKPTCore;
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -40,7 +40,7 @@ namespace TDESDUKPTTool
                 byte[] encryptedBytes = encryptedData.HexStringToByteArray();
 
                 // Decrypt data
-                byte[] decryptedBytes = Dukpt.Decrypt(txtBDK.Text, txtKSN.Text, encryptedBytes, rbPINVariant.Checked);
+                byte[] decryptedBytes = DUKPT.Decrypt(txtBDK.Text, txtKSN.Text, encryptedBytes, rbDataVariant.Checked ? DUKPTVariant.Data : DUKPTVariant.PIN);
 
                 // Convert bytes to ASCII string
                 string decryptedString = Encoding.ASCII.GetString(decryptedBytes);
@@ -61,7 +61,7 @@ namespace TDESDUKPTTool
                 byte[] decryptedBytes = Encoding.ASCII.GetBytes(txtDecryptedData.Text.Trim());
 
                 // Encrypt data
-                byte[] encryptedBytes = Dukpt.Encrypt(txtBDK.Text, txtKSN.Text, decryptedBytes, rbPINVariant.Checked);
+                byte[] encryptedBytes = DUKPT.Encrypt(txtBDK.Text, txtKSN.Text, decryptedBytes, rbPINVariant.Checked ? DUKPTVariant.PIN : DUKPTVariant.Data);
 
                 // Convert encrypted bytes to ASCII string of HEX
                 string encryptedString = encryptedBytes.ToHexString();
@@ -112,5 +112,24 @@ namespace TDESDUKPTTool
         }
 
         #endregion
+
+        private void llWarning_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ShowWarning();
+        }
+
+        private void ShowWarning()
+        {
+            MessageBox.Show("Do not use this tool in any environment with production encryption keys or key parts! Follow all standard policies and procedures for handling encryption keys and key parts.",
+                            "Warning!",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Exclamation,
+                            MessageBoxDefaultButton.Button1);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ShowWarning();
+        }
     }
 }
