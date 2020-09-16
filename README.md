@@ -1,4 +1,4 @@
-# TDES DUKPT Tool
+# TDES DUKPT Tool [![Downloads](https://img.shields.io/github/downloads/rbonestell/tdesdukpttool/total)](https://github.com/rbonestell/TDESDUKPTTool/releases/latest)
 TDES DUKPT encryption, decryption, and key part utility for Windows.
 
 Features:
