@@ -21,9 +21,9 @@ Features:
 * [Derived unique key per transaction - Wikipedia](https://en.wikipedia.org/wiki/Derived_unique_key_per_transaction)
 
 #### About the project
-Visual Studio 2017 Solution
+Visual Studio 2019 Solution
 
-Setup project requires [Microsoft Visual Studio 2017 Installer Projects Plugin](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
+Setup project requires [Microsoft Visual Studio Installer Projects Plugin](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
 
 This project utilizes [Dukpt.NET by sgbj](https://github.com/sgbj/Dukpt.NET), modified to encrypt and decrypt utilizing a DEK mask for the session key.
 
