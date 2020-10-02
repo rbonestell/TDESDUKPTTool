@@ -10,7 +10,7 @@ Features:
 
   <img src="https://i.imgur.com/898rre0.png" width="40%">
   
-[Download the installer here!](https://github.com/rbonestell/TDESDUKPTTool/releases/download/1.1/SetupTDESDUKPTTool.msi)
+[Download the installer here!](https://github.com/rbonestell/TDESDUKPTTool/releases/latest)
 
 ### Resources
 * [How To Decrypt Credit Card Data, Part I - IDTECH](https://idtechproducts.com/how-to-decrypt-credit-card-data-part-i/)
@@ -24,8 +24,6 @@ Features:
 Visual Studio 2019 Solution
 
 Setup project requires [Microsoft Visual Studio Installer Projects Plugin](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2017InstallerProjects)
-
-This project utilizes [Dukpt.NET by sgbj](https://github.com/sgbj/Dukpt.NET), modified to encrypt and decrypt utilizing a DEK mask for the session key.
 
 ## Contributing
 
